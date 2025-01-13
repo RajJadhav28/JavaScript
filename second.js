@@ -53,3 +53,33 @@ const student={
 console.log(student);
 console.log(typeof student);
 console.log(student["fullName"]);
+console.log(student.age);//1st method to access key of object
+console.log(student["age"]);//2nd method to access key of object
+student.age=student.age+1;
+
+console.log(student.age);
+//or
+student["age"]=student["age"]+1;
+console.log(student["age"]);
+student["fullName"]="Rahul Sharma";
+console.log(student["fullName"]);
+//or
+console.log(student.fullName);
+
+const product={
+    title:"Ball Pen",
+    rating:4,
+    offer:5,
+    price:270
+};
+console.log(product);
+console.log(typeof product);
+const profile={
+    username:"Raj Jadhav",
+    isFollow:false,
+    followers:123,
+    following:123
+};
+console.log(profile);
+console.log(typeof profile);//o/p--object
+console.log(typeof profile["username"]);// o/p--string
